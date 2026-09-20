@@ -40,11 +40,9 @@ document.addEventListener("DOMContentLoaded", () => {
             }
             blocks.push(row);
         }
-
         statusEL.textContent = "Break all blocks!";
         requestAnimationFrame(gameLoop);
     }
-
     document.addEventListener("mousemove", (e) => {
         const rect = canvas.getBoundingClientRect();
         let mouseX = e.clientX - rect.left;

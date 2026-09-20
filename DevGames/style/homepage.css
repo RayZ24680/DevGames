@@ -1,0 +1,106 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #a1d3f5;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 3rem;
+    color: blue;
+    text-decoration: underline;
+    margin-top: 20px;
+}
+
+.games {
+    background-color: #b8b8b8;
+    border: 3px solid black;
+    width: 420px;
+    min-height: 420px;
+    margin-top: 40px;
+    padding: 20px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+
+    justify-items: center;
+    align-items: center;
+}
+
+.game {
+    width: 160px;
+    height: 120px;
+    background-color: #e6e6e6;
+    border: 3px solid #333;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1.4rem;
+    font-weight: bold;
+
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.game a {
+    text-decoration: none;
+    color: black;
+}
+
+.game:hover {
+    background-color: #d0d0d0;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 80px;        /* pushes footer lower */
+    margin-bottom: 40px;     /* adds breathing room */
+    text-align: center;
+    font-size: 1.2rem;
+    color: #2e2e2e;
+}
+
+footer .contact {
+    margin-top: 10px;
+    background-color: #e6e6e6;
+    border: 2px solid #333;
+    border-radius: 8px;
+    padding: 10px 20px;
+    width: 260px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer .contact h4 {
+    margin: 0;
+    font-size: 1.3rem;
+    text-decoration: underline;
+}
+
+footer .contact p {
+    margin: 4px 0;
+}
+
+.game a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.game img {
+    width: 70px;
+    height: 50px;
+}

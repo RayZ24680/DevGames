@@ -1,0 +1,116 @@
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#a1d3f5;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    align-items:start;
+    justify-content: left;
+    flex-direction:column;
+    position: relative;
+    gap: 40px;
+}
+.homebtn{
+    display: inline-block;
+    padding: 0.5px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 3rem;
+    cursor: pointer;
+    background-color: lightblue;
+    border: 1px solid blue;
+}
+h1{
+    text-decoration: underline;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: blue;
+}
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+    justify-content: center;
+    margin-top: 10%;
+}
+.screen{
+    color: #2e2e2e;
+    background-color: #b8b8b8;
+    border: 3px solid black;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    font-size: 2.5rem;
+    min-height: 400px;
+    height: auto;
+    padding-bottom: 20px;
+}
+
+#board{
+    display: grid;
+    grid-template-columns: repeat(7,60px);
+    grid-template-rows: repeat(6,60px);
+    gap: 5px;
+    border: 1px solid black;
+    margin-bottom: 15px;
+}
+
+.cell{
+    width: 60px;
+    height: 60px;
+    border: 2px solid #333;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
+
+.cell.player1{
+    background-color: #ffd900;
+}
+.cell.player2{
+    background-color: #1313f9;
+}
+footer {
+    margin-top: 80px;        /* pushes footer lower */
+    margin-bottom: 40px;     /* adds breathing room */
+    text-align: center;
+    font-size: 1.2rem;
+    color: #2e2e2e;
+}
+
+footer .contact {
+    margin-top: 10px;
+    background-color: #e6e6e6;
+    border: 2px solid #333;
+    border-radius: 8px;
+    padding: 10px 20px;
+    width: 260px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer .contact h4 {
+    margin: 0;
+    font-size: 1.3rem;
+    text-decoration: underline;
+}
+
+footer .contact p {
+    margin: 4px 0;
+}

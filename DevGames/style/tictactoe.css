@@ -1,0 +1,126 @@
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#a1d3f5;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    align-items:start;
+    justify-content: left;
+    flex-direction:column;
+    position: relative;
+    gap: 40px;
+}
+.homebtn{
+    display: inline-block;
+    padding: 0.5px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 3rem;
+    cursor: pointer;
+    background-color: lightblue;
+    border: 1px solid blue;
+}
+h1{
+    text-decoration: underline;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: blue;
+}
+
+footer {
+    margin-top: 80px;        /* pushes footer lower */
+    margin-bottom: 40px;     /* adds breathing room */
+    text-align: center;
+    font-size: 1.2rem;
+    color: #2e2e2e;
+}
+
+footer .contact {
+    margin-top: 10px;
+    background-color: #e6e6e6;
+    border: 2px solid #333;
+    border-radius: 8px;
+    padding: 10px 20px;
+    width: 260px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer .contact h4 {
+    margin: 0;
+    font-size: 1.3rem;
+    text-decoration: underline;
+}
+
+footer .contact p {
+    margin: 4px 0;
+}
+
+.screen{
+    color: #2e2e2e;
+    background-color: #b8b8b8;
+    border: 3px solid black;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    font-size: 2.5rem;
+    min-height: 400px;
+    height: auto;
+    padding-bottom: 20px;
+}
+#board{
+    margin-top: 20px;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(3,100px);
+    grid-template-rows: repeat(3,100px);
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+.cell:not(.disabled):hover{
+    background-color: #f0f0f0;
+}
+
+.cell{
+    width: 100px;
+    height: 100px;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #333;
+    cursor: pointer;
+    user-select: none;
+}
+.cell.disabled{
+    cursor: default;
+}
+
+
+#status{
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+#reset{
+    margin-top:10px;
+    /* padding: 6px 12px; */
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 2px 10px;
+    color: white;
+    background-color: #333;
+    border: 1px solid black;
+    border-radius: 20%;
+}
